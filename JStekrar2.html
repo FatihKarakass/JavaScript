@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>
+            JavaScript Varibles
+        </h1>
+        <p id=></p>
+        <!--
+            <script>
+            const time = new Date().getHours;
+            let deneme;
+            if(time>10){
+                deneme = "günaydın";
+            }else if(time>20){
+                deneme = "iyi akşamlar";
+            }
+            else {
+                deneme  = "iyi geceler";
+            }
+            document.getElementById("demo").innerHTML = 
+             "Saat : "+ time +  deneme;
+
+        </script>
+        <script>
+            let denem ;
+            switch(new Date().getDay()){
+                case 0 : denem = "pazar";
+                break;
+                case 1 : denem = "pazartesi";
+                break;
+                case 2 : denem = "salı";
+                break;
+                case 3 : denem = "Çarşamba";
+                break;
+                case 4 : denem = "perşembe";
+                break;
+                case 5 : denem = "cuma";
+                break;
+                case 6 : denem = "cumartesi";
+                
+                
+
+            }
+            document.getElementById("demo").innerHTML = 
+            denem;
+
+        </script>
+        <script>
+            const cars = ["bmw","wv","audi","skoda"];
+
+            let i= 0;
+            let text = "";
+            let len = cars.length;
+
+            for(;i<len;i++){
+                text += cars[i] + "<br>";
+
+            }
+            document.getElementById("demo").innerHTML
+            = text ; 
+        </script>
+        <script>
+            let i = 0 ; 
+            let text = "";
+            let len = sayı.length;
+            const sayı  =["1","24","46","68","79","90"];
+            for (;i<len;i++){
+                text += sayı[i] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = 
+            text ;
+
+        </script>
+        <script>
+            const numbers = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value) {
+        txt += value + "<br>"; 
+        }
+        </script>
+        <script>
+            let text = "";
+            const cars = ["wv","bmw","aud"];
+            for(let x of cars){
+                text += x + "<br>";
+            }
+            document.getElementById("demo").innerHTML = 
+            text;
+
+        </script>
+        <script>
+            let text = "";
+            const araba = ["wv","bmw","audi"];
+            let i = 0;
+            while(araba[i]){
+                text += araba[i]+ "<br>";
+                i++;
+            }
+            document.getElementById("demo").innerHTML = 
+            text ; 
+        </script>
+        <script>
+            let text = "" ; 
+            let i = 0;
+            for(;i<10;i++){
+                text += i + "<br>";
+                if(i===5){break;}//continue da geçmek için kullanılır.
+            }
+            document.getElementById("demo").innerHTML = 
+            text;
+
+        </script>
+        <script>
+            const fruits = new Map([
+                ["elam",400],
+                ["armu",300],
+                ["limon",600]
+
+            ]);
+
+            let text = "";
+            for(const x of fruits){
+                text += x + "<br>";
+            }
+            document.getElementById("demo").innerHTML = 
+            text;
+            
+        </script>
+        <script>
+            const letters = new Set(["a","b","c"]);
+            letters.add("d");
+            letters.add("e");
+
+            const f = "f";
+            const g = "g";
+
+            letters.add(f);
+            letters.add(g);
+            
+
+
+
+            document.getElementById("demo").innerHTML = 
+            letters.size;
+        </script>
+        <script>
+            const deneme = new Set(["a","b","c"]);
+            let text = "";
+
+            deneme.forEach(function(value)
+            {
+                text += value +"<br>";
+            })
+            document.getElementById("demo").innerHTML = 
+            text;
+            
+        </script>
+        <script>
+            const meyve = new Map([
+                ["elma",300],
+                ["armut",400],
+                ["portakal",500]
+            ]);
+            meyve.set("muz",100);
+            meyve.set("armut",900);
+            meyve.delete("portakal");
+
+
+            document.getElementById("demo").innerHTML= 
+            meyve.get("muz") +"<br>"+  meyve.size + "<br>"+
+            meyve.has("elma");
+        </script>
+        <script>
+            const meyveler = new Map([
+                ["elma",200],
+                ["armut",300],
+                ["portakal",600]
+            ]);
+
+            let text = "";
+
+            meyveler.forEach(function(value,key){
+                text += key + "=" + value + "<br>"; 
+            })
+            document.getElementById("demo").innerHTML = 
+
+            text;
+        </script>
+        <script>
+            const meyveler = new Map([
+                ["elma",200],
+                ["armut",300],
+                ["portakal",600]
+            ]);
+
+            let text = "";
+
+            for ( const x of meyveler.entries()){
+                text += x + "<br>";
+            }
+            document.getElementById("demo").innerHTML = 
+
+            text;
+        </script>
+        <script>
+            const meyve = ["elam","armut","portakal","kiraz"];
+            document.getElementById("demo").innerHTML = 
+            isArray(meyve);
+            function isArray(myArray){
+                return myArray.constructor === Array ; 
+
+            }
+        </script>
+        <script>
+            const myDate = new Date() ;
+            document.getElementById("demo").innerHTML = 
+            isDate(myDate);
+            function isDate(myDate){
+                return myDate.constructor ===Date;
+            }
+
+        </script>
+        <script>
+            let y = "5";
+            let x = + y ;
+            let a = 123;
+
+            document.getElementById("demo").innerHTML= 
+            typeof y + "<br>" + typeof x + "<br>"+
+            String(x)+ "<br>"+
+            String(123) + "<br>"+
+            x.toString()+ "<br>"+
+            (123).toString()
+            ;
+
+        </script>
+        <script>
+            let text = "Visit W3Schools!";
+            let n = text.search ("W3Schools");
+            let a = text.search(/w3schools/i);
+            document.getElementById("demo").innerHTML = 
+            n +"<br>" + 
+            a;
+
+
+        </script>
+        
+        -->
+        <button onclick="myFunction()">Try... </button>
+        <p id="demo">ben ömer fatih Karakaş</p>
+        <script>
+            function myFunction(){
+                let text=
+                document.getElementById("demo").innerHTML ;
+
+                document.getElementById("demo").innerHTML = 
+                text.replace("Karakaş","faruk karakaş");
+            }
+
+        </script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </body>
+
+    
+</html>

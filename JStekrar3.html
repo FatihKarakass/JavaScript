@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    
+    <!--
+        <button onclick="myFunction()">Try... </button>
+        <p id="demo">ben ömer fatih Karakaş</p>
+        <script>
+            function myFunction(){
+                let text=
+                document.getElementById("demo").innerHTML ;
+
+                document.getElementById("demo").innerHTML = 
+                text.replace("Karakaş","faruk karakaş");
+            }
+
+        </script>
+        <script>
+        let text = "ben ömer fatih karakaş ömer fatih karakas 1,2,3,4,5,6,7";
+        let değişken  =text.match(/fatih/i);
+        let değişken1 = text.match(/ömer/g);
+        let değişken2 = text.match(/[ö]/g);
+        let değişken3 = text.match(/[1-4]/g);
+        let değişken4 = text.match(/(ömer|fatih)/g);
+
+        document.getElementById("demo").innerHTML = 
+        değişken + "<br>"+
+        değişken1 + "<br>"+
+        değişken2 + "<br>" +
+        değişken3 + "<br>" +
+        değişken4; 
+    </script>
+    <p id="deneme">The best things in life are free!</p>
+    <script>
+        let  test= 
+        document.getElementById("deneme").innerHTML;
+        const harf =/e/;
+        document.getElementById("demo").innerHTML = 
+        harf.test(test);
+
+
+
+    </script>
+    <script>
+        const obj = /e/.exec("The best things in life are free!");
+        document.getElementById("demo").innerHTML = 
+        "Found" + obj[0] + "in position" + obj.index + "in the next: " + obj.input  ; 
+    </script>
+    <script>
+        try{
+            adddlert("welcome guest!");
+
+        }
+        catch(err){
+            document.getElementById("demo").innerHTML= 
+            err.message;
+        }
+    </script>
+    <button onclick="myFunction()" type="button">try</button>
+    <p id="p01"></p>
+    <script>
+        function myFunction(){
+            const message = document.getElementById("p01").innerHTML=
+            "";
+            let x = document.getElementById("demo").value;
+
+            try{
+                if(x.trim() == "" ) throw "empty";
+                if(isNaN(x)) throw "not a number" ;
+                x = Number(x);
+                if(x<5) throw "too low";
+                if(x>10) throw "too high";
+
+
+            }
+            catch(err){
+                message.innerHTML = "Input is" + err;
+            }
+        }
+    </script>
+    <p id="demo2"></p>
+    <script>
+        myFunction();
+        function myFunction(){
+            let carName = "Volvo";
+            document.getElementById("demo1").innerHTML = 
+            typeof carName + " " + carName ;
+
+        }
+        document.getElementById("demo2").innerHTML = 
+        typeof carName;
+        
+    </script>
+    <script>
+        //var da dışardakini elirtebilirken let te belirtemeyiz
+        
+        var carName = "Volvo";
+        document.getElementById("demo1").innerHTML= 
+        "I can not display" + window.carName;
+        
+    </script>
+    <script>
+        var x ; 
+        x= 5;
+        elem = document.getElementById("demo1");
+        elem.innerHTML = x;
+        
+
+    </script>
+    <script>
+        try{
+            carName = "Volvo";
+            let carName = "audi";
+        }
+        catch(err){
+            document.getElementById("demo1").innerHTML = 
+            err;
+        }
+    </script>
+    <p >çalışma</p>
+    <p id="demo1"></p>
+    <script>
+        var x = 5  ;
+        var y = 7  ;
+
+        elem = document.getElementById("demo1");
+        elem.innerHTML = x + " " + y  ;
+        
+    </script>
+    <script>
+        const person= {
+            fırstName :"Ömer",
+            lasnName : "Karakaş",
+            id : 6969,
+            fulName : function(){
+                return this.fırstName + " " + this.lasnName ;
+            }
+        } ;
+        document.getElementById("demo").innerHTML= 
+        person.fulName();
+    </script>
+    <script>
+        const fonksiyon = {
+            fullName  :function(){
+                return this.firstName + " "+ this.lastName ;
+            }
+        }
+        const person = {
+            firstName : "Ömer",
+            lastName: "Karakaş"
+        }
+        const person1 = {
+            firstName : "nihan",
+            lastName : "Karakaş"
+        }
+        document.getElementById("demo").innerHTML= 
+        fonksiyon.fullName.call(person1);
+
+    </script>
+    <script>
+        const person = {
+            firstName : "Ömer",
+            lastName : " Karakaş",
+            fullName : function(){
+                return this.firstName + " "+ this.lastName ;
+            }
+        }
+        const member= {
+            firstName : "Nihan ",
+            lastName : "Karakaş"
+        }
+        let fullName = person.fullName.bind(member);
+
+        document.getElementById("demo").innerHTML = 
+        fullName();
+
+
+    </script>
+    <script>
+        let myFunction = (a,b) => a*b;
+        let helli = "";
+        helli = (val) => " hello " + val ;
+
+
+        let hello = "";
+        hello = ()=>{
+            return "Hello Worls";
+        }
+        document.getElementById("demo").innerHTML = 
+        hello() +"<br>"+ myFunction(5,6) + "<br>" + helli("World");
+    </script>
+    <script>
+        class myCar{
+            constructor(Marka,yıl){
+                this.Marka=Marka;
+                this.yıl=yıl;
+            }
+            age(x){
+                return x - this.yıl;
+            }
+        }
+        const date = new Date();
+        let yıl = date.getFullYear();
+
+        const myCar = new Car("Ford",2014);
+        document.getElementById("demo").innerHTML= 
+        "Arabanın Maraksı : " + myCar.Marka + "Arabanın Yılı : " + myCar.age(yıl);
+
+    </script>
+
+    -->
+    <p id="demo"></p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+</body>
+</html>

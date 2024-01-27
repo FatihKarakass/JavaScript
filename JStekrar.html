@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>
+            JavaScript Varibles
+        </h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+        </p>
+        
+
+
+
+
+        <p id="demo"></p>
+        <!--
+            <input type="" id="age" >
+        <button onclick="myFunction()" >Yaş Doğrulama</button>
+        <script>
+            const x= 5;
+            const y = 6;
+            const z= x+ y ;
+            document.getElementById("demo").innerHTML=
+            "The value of z is:" + z;
+            
+
+        </script>
+    -->
+    <!--
+    <script>
+        let x= 10;
+        let y= 20+ x;
+        document.getElementById("demo").innerHTML= "Y nin değeri = "+ y;
+
+    </script>
+     <script>
+            let text = "ömer";
+            text += "karakas";
+            document.getElementById("demo").innerHTML =text;
+
+
+
+        </script>
+         <script>
+        let x =20e10;
+        
+        document.getElementById("demo").innerHTML = x;
+
+    </script>
+       <script>
+        x=5;
+        y=5;
+        z=6;
+        document.getElementById("demo").innerHTML
+        = (x==y) +"<br>"+ (x==z);
+        
+    </script>
+    <script>
+       // cars = ["WV" , "2018", "34KV1825"]
+        const person ={ firstName:"Ömer", lastName:"Karakas", age: 21,};
+        document.getElementById("demo").innerHTML = person.firstName;
+
+
+    </script>
+    <script>
+        document.getElementById(    "demo").innerHTML =
+        typeof  46 + "<br>"+
+        typeof   "ömer" + "<br>"+
+        typeof  "";
+
+
+    </script>
+    <script>
+        let car="";
+        document.getElementById("demo").innerHTML =
+        "car value is = "+ car + 
+        "<br>"+
+        "car type is =  " + typeof car;
+        
+    </script>
+    <script>//functions
+        /*let x = myFunction(3,5);
+        document.getElementById("demo").innerHTML= x;
+        function myFunction(a,b) {
+            return a*b;
+        }*/
+        function derece(f){
+            return (5/9) * (f-32);
+
+        }
+        let value = derece(77);
+        document.getElementById("demo").innerHTML = value;
+        
+
+    </script>
+    <script>
+        const person = {
+            firstName : "ömer",
+            lastName : "Karakaş",
+            id : 2002,
+            fullName : function (){
+                return this.firstName +" " + this.lastName;
+            }
+        };
+        document.getElementById("demo").innerHTML = 
+        person.fullName();
+
+    </script>
+    <button onclick="document.getElementById('demo').innerHTML= Date()">The time is?</button>
+    <br>
+    <button onclick="this.innerHTML=Date()">click and lern time...</button>
+    <script>
+        let carName ="volvo'xc90'";
+        document.getElementById("demo").innerHTML = "araba markası:" + carName + " " + "Harf sayısı: "+ carName.length;
+
+    </script>
+    <script>
+        let text="Merhaba ben \"Ömer \" tırnak işaretlerini text 'in  içersine yerleştirmeyi \\ öğreniyorum.  ";
+        document.getElementById("demo").innerHTML = text;
+        //ters eğik çizgiyle kesebiliyoruz.
+    </script>
+    <script>
+        //daha okunabilir kod yazmak için her satırda  80 karakterden az kullanmak gerekir.
+        document.getElementById("demo").innerHTML =
+        "Hello World " + 
+        "Ben  Ömer" ;
+    </script>
+    <script>
+        let x = "ömer"; // string oluyor
+        let y = new String("ömer"); //object oluyor
+        document.getElementById("demo").innerHTML= 
+        x==y + // eşitmidir "==" diye sorulunca eşittir "true" cevabı alınıyor.
+        " " +
+        x===y;// eşit değilmidir sorusu "===" false çıkıyor
+
+
+
+    </script>
+    <script>
+        let x= new String("demo");
+        let y =new String("demo");
+        document.getElementById("demo").innerHTML= 
+        x==y +
+        x===y;
+        //object lerde herzaman false verir.
+        
+    </script>
+    <script>
+        let x= new String("demo");
+        let y =new String("demo");
+        document.getElementById("demo").innerHTML= 
+        x==y +
+        x===y;
+        //object lerde herzaman false verir.
+        
+    </script>
+      <button onclick="myFunction()">try it</button>
+    <p id="demo"> Please visit microsoft! </p>
+
+    <script>
+        function myFunction(){
+            let text=
+            document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=
+            text.replace("microsoft","aaaaaaa");
+        }
+
+    </script>
+     <script>
+        let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+        text =text.replaceAll("Cats","Dogs");//Cats leri Dogs a çevirir
+        text = text.replaceAll("cats","dogs");
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+    <p id="demo">Please visit Microsoft and Microsoft!</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction() {
+            let text = 
+            document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=
+            text.replace(/microsoft/gi,"aaaaa"); // " /..../g " kullanıldığında tüm değişkenler değişir.
+            //   /...../i kullanıldığında büyük/küçük harfin önemi kalmaz. ikisini ayıanda kullanabiliriz.
+
+
+
+        }
+    </script>
+    <p id="demo">Hello World</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction(){
+            let text= 
+            document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=
+            text.toUpperCase();// yazıyı büyük harfe çeviri
+            // .toLoverCase() yazıyı küçük harfe çevirir.
+
+        }
+    </script>
+    <script>
+        let text1 ="Hello";
+        let text2 = "World!";
+        let text3 = text1.concat(" ",text2);// concat birleştirir.
+        document.getElementById("demo").innerHTML= 
+        text3;
+
+    </script>
+    <script>
+        let text1 = "     Hello World!     ";
+        let text2 = text1.trimStart(); // .trim() başındaki ve sonunda ki boşlukları yok eder .trimstart() sade başındakileri. 
+        // .trimend() sadece sonda ki boşlukları yok eder.
+        document.getElementById("demo").innerHTML =
+        "Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+
+    </script>
+    <script>
+        let text = "5";
+        text = text.padStart(5,4);
+        document.getElementById("demo").innerHTML =text;
+
+    </script>
+    <script>
+        let number =5;
+        let text1= number.toString();
+        text2 = text1.padStart(5,"a");// .padStart ve .padEnd sayılarda çalışmaz sring olması lazım.
+        document.getElementById("demo").innerHTML =text2;
+        
+    </script>
+    <script>
+        let text ="Hello World!";
+        let char = text.charAt(0);    //.charAt() istediğin yerdeki veriye olaşır. .charCodeAt() ulaştığı veriyi sayısal olarak kodlar .
+
+        document.getElementById("demo").innerHTML= 
+        char +"<br> "+ text.charCodeAt(2) +"<br>" + text[0];
+
+    </script>
+    <script>
+        let text = "Please locate where 'locate' occurs!";
+        let index =  text.lastIndexOf("locate");// .indexOf baştan kaçıncı eleman buluyor, .lastIndexOf tersten 
+        document.getElementById("demo").innerHTML= 
+        index;
+
+    </script>
+    <script>
+        let text ="Please locate where 'locate' occurs!";
+        let index = text.search("locate");
+        document.getElementById("demo").innerHTML=index;
+        
+    </script>
+    <script>
+        let text = "The rain in SPAIN stays mainly in the plain";
+        const matchh= text.match(/ain/g) ;
+        document.getElementById("demo").innerHTML = text.length + " " + matchh ;
+
+    </script>
+    <script>
+        let text1 = "I love cats. Cats are very easy to love. Cats are very popular.";
+        const matchhAll= text1.matchAll(/Cats/gi);
+        document.getElementById("demo").innerHTML = 
+        Array.from(matchhAll);
+    </script>
+    <script>
+        let text2= "Hello world, welcome to the universe.";
+        const includess =text2.includes("world")
+        document.getElementById("demo").innerHTML =
+        includess;
+</script>
+
+
+<script>
+        let text = "Hello world, welcome to the universe.";
+        document.getElementById("demo").innerHTML= 
+        text.startsWith("Hello") + " "+ 
+        text.endsWith("universe.");
+
+    </script>
+    <script>
+        let text = `Hello World' "" istediğimiz gibi tırnak işaretlerini kullanabiliyoruz.`;
+        document.getElementById("demo").innerHTML = 
+        text;
+
+    </script>
+    <script>
+        let firstName = "ömer";
+        let lastName = "karakaş";
+        let text = `Welcome ${firstName}_ ${lastName} `;
+
+        document.getElementById("demo").innerHTML = 
+        text;
+
+    </script>
+    <script>
+        let price = 10;
+        let vat = 0.25;
+        let total = `Total : ${ (price * (1 + vat)).toFixed(2)}`;
+        document.getElementById("demo").innerHTML = 
+        total;
+        
+    </script>
+    <script>
+        let x = 3;
+        let y = 3.5;
+        let ux = 3e3;
+        let uy = 3e-3;
+
+        document.getElementById("demo").innerHTML = 
+        "satılar ondalıklı :" + y + " ve ondalıksız bir şekilde yazıla bilir : " + x + "<br>"+
+        "üslü sayı işeemleri de yaplabilir : " +ux + " ve" + uy  +" gibi";
+
+    </script>
+    <script>
+        let x = 10;
+        let y = 20 ; 
+        let xs= "10";
+        let yx= "20";
+        let a = x+y;
+        let b = x+yx ;
+        let c = yx + y ;
+        let d = y / x ;
+        let e = y / xs ;
+
+        document.getElementById("demo").innerHTML = 
+        a +" Çalışacaktır" + b +" ekleme yapıcaktır ." +c +"ekleme yapacaktır. "+ "<br>" +
+        d + " bölme işlemi çalışacaktır . " + e +" jacascript kendini çalışmaya zorlayacaktır. " 
+        ;
+
+    </script>
+    <script>
+        let myNumber= 2 ;
+        let text = "" ;
+        while (myNumber !=Infinity){
+            myNumber = myNumber*myNumber;
+            text =text  + myNumber + "<br>";
+        }
+        document.getElementById("demo").innerHTML = 
+        text ;
+        
+    </script>
+    <script>
+        let x = 10 ;
+        let y = new Number(10) ;
+        document.getElementById("demo").innerHTML = 
+        (x==y);
+
+    </script>
+    <script>
+        let x = 12314124131412412341241243241;
+        let y = BigInt("1241323412433134124114524151");
+        document.getElementById("demo").innerHTML = 
+        x + "<br>" + "bigint:" + y ;
+
+    </script>
+    <script>
+        let x = 1234123123123131312313n ;
+        let y = 123412312313131231313123n ;
+        document.getElementById("demo").innerHTML = 
+        x*y;
+    </script>
+    <script>
+        let x = 5n;
+        let y = 2 ;
+        let z = x/ y ;
+        let a = Number(x)/y ;
+
+
+        document.getElementById("demo").innerHTML = 
+        z + "eror verir." + "<br>" +  a + "eror vermemesi için Numbera çevrilir . ";
+    </script>
+    <script>
+        let x = Number.MAX_SAFE_INTEGER;
+        let y = Number.MIN_SAFE_INTEGER;
+
+        document.getElementById("demo").innerHTML = 
+        x + "Max" + "<br>" + y + "min" ;
+        
+    </script>
+    <script>
+        document.getElementById("demo").innerHTML = 
+        Number.isInteger(10) + "<br>"+
+        Number.isInteger(10.5)+"<br>"+
+        Number.isSafeInteger(12312312313123131313) + "<br>" +
+        Number.isSafeInteger(123) ;
+        
+
+
+    </script>
+    <script>
+        let x = 123;
+        document.getElementById("demo").innerHTML = 
+        x.toString() + "<br>"+
+        (123).toString() +"<br>"+
+        (23+100).toString() ;
+
+    </script>
+    <script>
+        let x =6.123; //belirlenen bölgeden sonrasını üslü sayı olarak yazar.
+        document.getElementById("demo").innerHTML = 
+        x.toExponential(2) + "<br>"+
+        x.toExponential(4);
+    </script>
+    <script>
+        let x = 9.1234;
+        document.getElementById("demo").innerHTML = 
+        x.toFixed(0) + "<br>" + 
+        x.toFixed(2) +"<br>" +
+        x.toFixed(4) ;
+
+
+    </script>
+    <script>
+        let x = 9.169;
+        document.getElementById("demo").innerHTML = 
+        x.valueOf(0) +"<br>"+
+        x.valueOf(2) +"<br>" +
+        x.valueOf(4) + "<br>" +
+        (123).valueOf( ) +"<br>" +
+        (23+100).valueOf() +"<br>";
+        
+
+    </script>
+    <script>
+        document.getElementById("demo").innerHTML =  //sadece anayı alır.
+        parseInt("-10")+
+        parseInt("10.13")+
+        parseInt("10 4");
+    </script>
+    <script>
+        document.getElementById("demo").innerHTML = // sayıyı yazıdan ayırı ancak sayının en başta yazması gerekiyor.
+        parseFloat("10 icardi.") + "<br>"+
+        parseFloat("200209058 ömer karakas okul numaralası  ");
+
+    </script>
+    <script>
+        document.getElementById("demo").innerHTML =  
+        // tam sayı olup olmadığını bulmak için kullanılır.
+        Number.isInteger(10)+ "<br>"+
+        Number.isInteger(10.5) + "<br>"+
+        //sayının güvenli olup olmadığını kontrol eder.
+        Number.isSafeInteger(10) +  "<br>" +
+        Number.isSafeInteger(12313123213131231231313) +"<br>"+
+        //sayıyı ayrıştırmaya yarar 
+        Number.parseFloat("10.24") +"<br>"+
+        Number.parseFloat("10 aavaa") +"<br>"+
+        Number.parseFloat("10 20 30 ") +"<br>" +
+        // sayıya ulaşmayı sağlar
+        Number.parseInt("10.35")+"<br>" +
+        Number.parseInt("10 20 30 ") + "<br>" +
+        Number.parseInt("-10 years")+ "<br>"+
+        Number.parseInt("ömer 10"); //Stringle başladığı için değeri sayı olarak kabul eder
+
+
+    </script>
+    <script>
+        const cars= ["opel","Honda","BMW"];
+        cars[0]= "Wv";
+
+        document.getElementById("demo").innerHTML = 
+        cars ;
+        const newcars = new cars["dacia","BMW","tofaş"];
+        
+
+        document.getElementById("demo").innerHTML = 
+        newcars;
+
+
+
+    </script>
+    <script>
+        const ısım = ["ömer","fatih","Karaaks"];
+        document.getElementById("demo").innerHTML  = 
+        ısım.toString();
+        const person = ["ahmet","Mehmet",25];
+        document.getElementById("demo").innerHTML = 
+        person[1];
+        const person2 = {firstname:"Ömer" , lastName:"Karakas",age:"21"};
+        document.getElementById("demo").innerHTML = 
+        person2.firstname;
+        
+
+
+    </script>
+    <script>
+        const fruits = ["elma","armut","üzüm","muz"];
+        let fruit = fruits[fruits.length - 1];
+        document.getElementById("demo").innerHTML = 
+        fruit;
+
+    </script>
+    <script>
+        const fruits = ["elme","armut","muz","üzüm"];
+        let fLen = fruits.length;
+        let text = "<ul>";
+
+            for(let i = 0 ; i<fLen; i++){
+                text += "<li>" + fruits[i] + "</li>";
+
+            }
+            text += "</ul>";
+
+            document.getElementById("demo").innerHTML = 
+            text ;
+
+    </script>
+    <script>
+        const fruits = ["elma" ,"armut","muz","limon"] ;
+        let text = "<ul>";
+            fruits.forEach(myFunction);
+        let += "</ul>";
+        document.getElementById("deom").innerHTML = 
+        text ;
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }    
+
+
+
+
+    </script>
+    <button onclick="myFunction()">Try It</button>
+    <script>
+        const fruits= ["elma","armu","muz"];
+
+        document.getElementById("demo").innerHTML = 
+        fruits;
+        function myFunction() {
+            fruits.push("limon");
+            document.getElementById("demo").innerHTML = 
+            fruits;
+
+        }
+
+    </script>
+    <button onclick="myFunction()"> Try It</button>
+    <script>
+        const meyve = ["elma","armut","muz"];
+        document.getElementById("demo").innerHTML = 
+        meyve ;
+
+        function myFunction() {
+            meyve[meyve.length] = "limon";// mu şekildede ekleniyor.
+            document.getElementById("demo").innerHTML = 
+            meyve ;
+
+        }
+        
+    </script>
+    <script>
+        //const numara = new Array(40,10,100,32); her iki şekilde kullanabiliriz.
+        const numara = [40,10,100,32];
+
+        document.getElementById("demo").innerHTML = 
+        numara[2];
+
+    </script>
+    <script>
+        //const numara = new Array(40); new arry in oluşturabileceği probleler bulunuyor...
+        const numara = [40];
+
+        document.getElementById("demo").innerHTML = 
+        numara;
+
+    </script>
+    <script>
+        const fruits = ["elma","armut","muz"];
+        
+        document.getElementById("demo").innerHTML = 
+        //typeof fruits; typeof kullanarak almış olduğumuz cevap ta arrey i  object veriyor yanlış oluyor
+        //Array.isArray(fruits)  //    doğru cevabı bu şekilde alabiliyoruz.
+        fruits instanceof Array;  // doğru cevabı bu şekilde alabiliyoruz.
+    </script>
+    <p id="demo2"></p>
+    <script>
+        const fruits = ["aple","banana","watermwlon"];
+        document.getElementById("demo").innerHTML = 
+
+        
+        //fruits.length ; 
+        //fruits.toString();
+        //fruits.join("*");
+        //fruits.pop();ekrana sonuncu değişkeni yazdırır ama amacı dizeden sonuncu değişkeni çıkartmaktır.
+        fruits;
+        fruits.push("kiwi");
+
+        document.getElementById("demo2").innerHTML = 
+        fruits;
+
+
+
+    </script>
+    <p id="demo2"></p>
+    <script>
+        const fruit = ["aple","banana","Kiwi"];
+        document.getElementById("demo").innerHTML = 
+        fruit;
+        //fruit.shift(); ilk elemanı kaldırı
+        //fruit.unshift("orange"); ilk eleman olarak ekler
+        //fruit[1]= "orange"; elemanı değiştirmeyi sağlar
+        // fruit[fruit.length] = "orange"; eklemenin başka bir yolu
+        //delete fruit[1];  silmeyi sağlar
+
+
+        document.getElementById("demo2").innerHTML = 
+        fruit;
+
+    </script>
+    <script>
+        const renk1 = ["mavi","kırmızı","mor"];
+
+        const renk2 = ["mavi","sarı","sarı"];
+
+        const renk3 = ["pembe","mor"];
+
+
+        const renkler = renk1.concat(renk2,renk3); //elemanları bielşt,rmemizi sağlar.
+
+        document.getElementById("demo").innerHTML = 
+        renkler;
+
+
+    </script>
+    <script>
+        const numara = [[1,2],[3,4],[5,6]];
+        const birleştirme = numara.flat();
+        
+        document.getElementById("demo").innerHTML = 
+        numara;
+
+    </script>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const meyve = ["elma","armut","limon"];
+
+        document.getElementById("demo").innerHTML = 
+        "ana meyvelerimiz : <br>" + meyve ;
+
+        let removed  = meyve.splice(2,2,"portakal","kivi");
+        document.getElementById("demo1").innerHTML = 
+        "new arry : <br>"
+        meyve ;
+
+        document.getElementById("demo2").innerHTML = 
+        removed;
+
+
+
+
+    </script>
+    <p id="demo1"></p>
+    <script>
+        const meyve = ["elma","armut","kiwi","limon"];
+
+        const newmeyve = meyve.slice(1);// slice arry i tam anlamıyle değiştirmez içinden istediğimiz veriyle tekrar oluşturur ana veri değişmez.
+
+        document.getElementById("demo").innerHTML = 
+        meyve + "<br>"
+        + "silinmiş haliyle arry : <br>" + newmeyve;
+
+
+        const bolmemeyve = meyve.slice(1,3);
+        document.getElementById("demo1").innerHTML = 
+        bolmemeyve;
+        
+
+    </script>
+    <script>
+        const meyve = ["elma","armut","kiwi","limon"];
+
+        document.getElementById("demo").innerHTML = 
+        meyve;// toString() yazmadanda  otamatik birşekilde string olluşturabiliriz.
+
+
+
+    </script>
+    <p id="demo1"></p>
+    <script>
+        const meyve = ["elma","aarmut","limon","karpuz"];
+
+        document.getElementById("demo").innerHTML = 
+        meyve ;
+
+        meyve.sort() ;
+        document.getElementById("demo1").innerHTML = 
+        meyve;
+    </script><p id="demo1"></p>
+    <script>
+        const sayılar = [13,25,57,12,444,];
+
+        document.getElementById("demo").innerHTML = 
+        sayılar;
+
+        sayılar.sort(function(a,b){return a-b});// büyükten küçüğe yazamak istersen b-a .
+        document.getElementById("demo1").innerHTML = 
+        sayılar;
+
+
+    </script><button onclick="myFunction()">Try it </button>
+    <script>
+        const sayılar = [1,4,6,7,3,9,3534,123];
+
+        document.getElementById("demo").innerHTML = 
+        sayılar ;
+        function myFunction() {
+            sayılar.sort(function(){return 0.5 - Math.random()});
+        
+        document.getElementById("demo").innerHTML = 
+        sayılar;
+    }
+
+
+
+    </script>
+    <script>
+        const sayılar = [2,7,3,8,1];
+
+        sayılar.sort(function(a,b) {return b-a}); //en büyük sayının bulunmasııbı sağlar a-b en küçük sayının bulunmasını sağlar.
+        document.getElementById("demo").innerHTML = 
+        sayılar[0];
+
+    </script>
+    <script>
+        const sayılar = [1,7,3,9,6];
+
+        document.getElementById("demo").innerHTML = 
+        maxsayı(sayılar);
+
+        function maxsayı(arr){
+            return Math.max.apply(null,arr);// max sayıyı bulur. Math.min.apply minuummu bulmayı sağlar.
+
+        }
+    </script>
+    <script>
+        const sayılar = [1,6,2,9,4,8];
+
+        document.getElementById("demo").innerHTML = 
+        enbuyuks(sayılar) ; 
+
+        function enbuyuks(arr){
+            let len = arr.length;
+            let max = -Infinity;
+            while(len--){
+                if(arr[len]>max){//max sayıyı bu şekilde buluyoruz minumumu (<) min olarak buluruz.
+                    max=arr[len];
+                }
+            }
+            return max;
+        }
+    </script>
+    <script>
+        const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+        displaycars();
+        cars.short(function(a,b) {return a.year - b.year});
+        displaycars();
+        function displaycars(){
+            document.getElementById("deme").innerHTML = 
+            cars[0].type + " " + cars[0].year + "<br>" +
+  cars[1].type + " " + cars[1].year + "<br>" +
+  cars[2].type + " " + cars[2].year;
+}
+        
+    </script>
+    <script>
+        const numbers = [44,23,1,5,77,3];
+
+        let text = "";
+
+        numbers.forEach(myFunction);
+
+        document.getElementById("demo").innerHTML  = 
+        text ; 
+
+        function myFunction(value){
+            text += value + "<br>" ;
+            
+        }
+
+    </script>
+    <script>
+        const number1 = [3,66,34,11,5,77];
+        const number2 = number1.map(myFunction);
+
+        document.getElementById("demo").innerHTML = 
+        number2;
+
+        function myFunction(value){
+            return value*2;
+        }
+
+    </script>
+    <script>
+        const number1 = [23,34,12,3,63,61];
+        const number2 = number1.flatMap((x) =>x*2);
+
+        document.getElementById("demo").innerHTML = 
+        number2;
+        
+    </script>
+    <script>
+        const number = [15,45,23,77,43,88,23];
+        const number2 = number.filter(myFunction);
+
+        document.getElementById("demo").innerHTML = 
+        number2 ;
+
+        function myFunction(value,index,arry){
+            return value>50;
+        }
+
+    </script>
+    <script>
+        const number = [12,34,23,1,5,6];
+        let sum = number.reduce(myFunction);
+
+        document.getElementById("demo").innerHTML = 
+        sum ;
+
+        function myFunction(value,total){
+            return total + value;
+            
+        }
+    </script>
+    <script>
+        const sayılar = [122,45,3,56,88];
+        let buyukluk = sayılar.every(myFunction);
+        let bazıdegerlerbuyuk = sayılar.some(myFunction);
+
+        document.getElementById("demo").innerHTML = 
+        "sayılar değerleri 18 den büyük mü : " + buyukluk + "<br>" +
+         "sayılar değerlerinin bazıları 18 den buyuk mu :" + bazıdegerlerbuyuk ;
+
+        function myFunction(value) {
+            return value> 18 ;
+        }
+    </script>
+    <script>
+        const elemanlar = ["elma","armut","limon","portakal"];
+        let konum = elemanlar.indexOf("elma")+ 1 ;
+        let sondankonum = elemanlar.lastIndexOf("elma")+ 1 ;
+
+
+        document.getElementById("demo").innerHTML = 
+        "eleman konumu : "+ konum + "<br>" +
+        "elemanın sondan konumu : "+ sondankonum; 
+
+  
+
+    </script>
+    <script>
+        const sayılar = [12,24,46,68,89,3,4,6];
+        let ilkbuyuk = sayılar.find(myFunction);
+        let ilkbuyukkonum = sayılar.findIndex(myFunction) +1;
+
+        document.getElementById("demo").innerHTML = 
+         "18 den büyük ilk sayı: " + ilkbuyuk + "<br>"+
+          "18 den buyuk ilk sayının konumu : " + ilkbuyukkonum;
+
+        function myFunction(value) {
+            return value>18 ;
+
+        }
+    </script>
+    <script>
+        const meyveler = ["elma","armut","limon","portakal"];
+        const keys = meyveler.keys();
+
+        let text = "";
+        for(let x of keys){
+            text += x +"<br>";
+        }
+        document.getElementById("demo").innerHTML = 
+        text ;
+
+    </script>
+    <script>
+        const meyveler = ["elma","armut","limon","portakal"];
+        const liste = meyveler.entries();
+
+        for (let x of liste){
+            document.getElementById("demo").innerHTML 
+            += x + "<br>";
+        }
+    </script>
+    <script>
+        const meyveler = ["elma","armut","limon","portakal"];
+        const elemanvarmı = meyveler.includes("limon");
+
+        document.getElementById("demo").innerHTML = 
+        elemanvarmı;
+    </script>
+    <script>
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "May"];
+
+        const year = [q1, q2,q3,q4];
+        document.getElementById("demo").innerHTML = 
+        year;
+        
+    </script>
+    <script>
+        const d = new Date();
+        const d1 = new Date("2002,05,30");
+
+        document.getElementById("demo").innerHTML = 
+        d.toString() + "<br>"+
+        d.toDateString() + "<br>"+
+        d.toUTCString() ;
+
+    </script>
+    <script>
+        let d = Date.parse("March 13, 2020");
+        const d1 = new Date(d);
+
+        document.getElementById("demo").innerHTML = 
+        d1;
+    </script>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = 
+        d.getFullYear() + "<br>"+
+        [d.getMonth() +1]+ "<br>"+
+        d.getDate()+ "<br>"+ 
+        d.getHours() + "<br>"+
+        d.getMinutes() + "<br>"+
+        d.getMilliseconds() + "<br>" + 
+        d.getDay() +"<br>" + // haftanın kaçıncı günü olduğunu öğreniriz.
+        d.getTime()  // 1970 den bu yana kaç milisaniye geçtiğini gösterir
+        ;
+    </script>
+    <script>
+        const d = new Date();
+        d.setFullYear(2002);
+        d.setMonth(11);
+        d.setDate(5);
+        d.setHours(19);
+        d.setMinutes(35);
+        d.setMilliseconds(567);
+        
+
+        document.getElementById("demo").innerHTML = 
+        d;
+    </script>
+    <script>
+        document.getElementById("demo").innerHTML = 
+        Math.round(4.6) + "<br>"+// sayıyı tam sayıya yuvarlar
+        Math.round(4.4)+ "<br>"+
+        Math.ceil(4.6) +"<br>" + //enyakın yukarı tam sayıya yuvarlar
+        Math.ceil(4.2)+"<br>"+
+        Math.floor(4.2)  + "<br>"+//en yakın alt tam sayıya yuvarlar + 
+        Math.trunc(4.4) + "<br>" + // sadece tam sayıyı yazdırır
+        Math.sign(-5) + "<br>" + // negatif ise -1 pozitif ise 1 yazdırır
+        
+        ;
+
+    </script>
+    --> 
+    <script>
+        function myFunction(){
+            let age=
+            document.getElementById("age").value;
+            let a = (age<18) ? "küçük olduğu için sayfa açılamıyor.":"büyük olduğu için devam edebilirsiniz.";
+
+            document.getElementById("demo").innerHTML= 
+            "Yaşınız 18'den " + a ;
+
+        }
+    </script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+  
+
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+   
+
+
+
+    </body>
+</html>
