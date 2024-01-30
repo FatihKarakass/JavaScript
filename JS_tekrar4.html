@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <h1>JS tekrar devam...</h1>
+    <p id="demo"></p>
+    <!--
+    <script>
+    
+        class Car{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+        
+        age() {
+            const date = new Date();
+            return date.getFullYear() - this.year;
+
+        }
+    }
+    const myCar = new Car("Ford",2014);
+    document.getElementById("dem").innerHTML = 
+    "My car is" + myCar.age() + " years old.";
+   
+    </script>
+    -->
+    <!--
+    <script>
+        class Car {
+        constructor(name,year) {
+            this.name = name;
+            this.year = year;
+        }
+        age(x){
+            return x -this.year;
+        }
+    }
+    const date = new Date();
+    let year = date.getFullYear();
+
+    const myCar = new Car("BMW",2018);
+    document.getElementById("demo").innerHTML = 
+    "My car is : " + myCar.age(year) + "years old. ";
+
+
+
+    </script>
+    -->
+    <script type="module">
+        import { name,age} from "./dis_ic.js";
+        let text = "My name is " + name + ", I am " + age + ".";
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+
+
+
+
+
+</body>
+</html>
